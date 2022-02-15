@@ -14,12 +14,22 @@ namespace Starbuzz
             Beverage df = new Decaf();
             Beverage es = new Espresso();
             Beverage hb = new HouseBlend();
-            
+           
+            dr = new Milk(dr);
+            dr = new Mocha(dr);
+
+            hb = new Soy(hb);
+
+            es = new Whip(es);
+            es = new Soy(es);
+            es = new Milk(es);
+            es = new Mocha(es);
+
             Beverage[] beverages = new Beverage[] { dr, df, es, hb };
             foreach (var bev in beverages)
             {
-                Console.WriteLine($"{bev.GetDescription()} - стоимость: " + $"{bev.Coast()} " + $"руб");
-            Console.WriteLine();
+                Console.WriteLine($"{bev.GetDescription()} " + $"{bev.Cost()} ");
+                Console.WriteLine();
             }
 
             Console.ReadKey();

@@ -10,31 +10,12 @@ namespace Starbuzz
     {
         public Decaf()
         {
-            Description = "Кофе без кофеина";
+            description = "Без кофеина" ;
         }
 
-        public override double Coast()
+        public override double Cost()
         {
-            return 120 + base.Coast();
-        }
-        public override bool HasMilk()
-        {
-            return false;
-        }
-
-        public override bool HasMocha()
-        {
-            return false;
-        }
-
-        public override bool HasSoy()
-        {
-            return true;
-        }
-
-        public override bool HasWhip()
-        {
-            return false;
+            return 1.05 ;
         }
     }
 }

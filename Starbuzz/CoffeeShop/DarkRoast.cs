@@ -10,31 +10,12 @@ namespace Starbuzz
     {
         public DarkRoast()
         {
-            Description = "Темный обжаренный кофе";
+            description = "Темн. обжарка";
+        }
+        public override double Cost()
+        {
+            return 0.99;
         }
 
-        public override double Coast()
-        {
-            return 100 + base.Coast();
-        }
-        public override bool HasMilk()
-        {
-            return true;
-        }
-
-        public override bool HasMocha()
-        {
-            return false;
-        }
-
-        public override bool HasSoy()
-        {
-            return false;
-        }
-
-        public override bool HasWhip()
-        {
-            return false;
-        }
     }
 }

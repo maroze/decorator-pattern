@@ -10,31 +10,13 @@ namespace Starbuzz
     {
         public Espresso()
         {
-            Description = "Эспрессо";
+            description = "Эспрессо" ;
         }
 
-        public override double Coast()
+        public override double Cost()
         {
-            return 135 + base.Coast();
+            return 1.99;
         }
-        public override bool HasMilk()
-        {
-            return true;
-        }
-
-        public override bool HasMocha()
-        {
-            return false;
-        }
-
-        public override bool HasSoy()
-        {
-            return false;
-        }
-
-        public override bool HasWhip()
-        {
-            return true;
-        }
+       
     }
 }
