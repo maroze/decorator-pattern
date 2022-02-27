@@ -10,31 +10,11 @@ namespace Starbuzz
     {
         public HouseBlend()
         {
-            Description = "Прекрасно сбалансированный кофе с нотками орехов и какао";
+            Description = "Домашняя обжарка";
         }
-
-        public override double Coast()
+        public override double Cost()
         {
-            return 150 + base.Coast();
-        }
-        public override bool HasMilk()
-        {
-            return true;
-        }
-
-        public override bool HasMocha()
-        {
-            return true;
-        }
-
-        public override bool HasSoy()
-        {
-            return true;
-        }
-
-        public override bool HasWhip()
-        {
-            return true;
+            return Rate += 200;
         }
     }
 }

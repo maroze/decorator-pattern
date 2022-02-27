@@ -16,38 +16,26 @@ namespace Starbuzz
 
         public string GetDescription()
         {
-            return Description;
+           return Description ;
         }
+        public double Rate;
+        abstract public double Cost();
 
-        public virtual double Coast()
+        public string SetMilk()
         {
-            double cost = 0;
-            if (HasMilk())
-            {
-                cost += milk;
-            }
-
-            if (HasSoy())
-            {
-                cost += soy;
-            }
-
-            if (HasMocha())
-            {
-                cost += mocha;
-            }
-
-            if (HasWhip())
-            {
-                cost += whip;
-            }
-
-            return cost;
+            return $"{Description += " + milk"} {Rate += milk}";
         }
-
-        public abstract bool HasMilk();
-        public abstract bool HasSoy();
-        public abstract bool HasMocha();
-        public abstract bool HasWhip();
+        public string SetSoy()
+        {
+            return $"{Description += " + soy"} {Rate += soy}";
+        }
+        public string SetMocha()
+        {
+            return $"{Description += " + mocha"} {Rate += mocha}";
+        }
+        public string SetWhip()
+        {
+            return $"{Description += " + whip"} {Rate += whip}";
+        }
     }
 }
