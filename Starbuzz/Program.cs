@@ -14,6 +14,16 @@ namespace Starbuzz
             Beverage df = new Decaf();
             Beverage es = new Espresso();
             Beverage hb = new HouseBlend();
+<<<<<<< HEAD:Starbuzz/Starbuzz/Program.cs
+            dr.SetMilk();
+            df.SetMocha();
+            es.SetWhip();
+            hb.SetSoy();
+            Beverage[] beverages = new Beverage[] { dr, df, es, hb };
+            foreach (var bev in beverages)
+            {
+                Console.WriteLine($"{bev.GetDescription()} - стоимость: " + $"{bev.Cost()} " + $"руб");
+=======
            
             dr = new Milk(dr);
             dr = new Mocha(dr);
@@ -29,6 +39,7 @@ namespace Starbuzz
             foreach (var bev in beverages)
             {
                 Console.WriteLine($"{bev.GetDescription()} " + $"{bev.Cost()} ");
+>>>>>>> LR07:Starbuzz/Program.cs
                 Console.WriteLine();
             }
 
